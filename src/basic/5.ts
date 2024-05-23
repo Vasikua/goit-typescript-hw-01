@@ -10,20 +10,23 @@
 
 
 // const isWeekend = (day) => {
-//
+
 
 
 enum DayOfWeek {
-  Monday ="workday" ,
-  Tuesday ="workday",
-  Wednesday ="workday",
-  Thursday ="workday",
-  Friday ="workday",
-  Saturday ="day off",
-  Sunday ="day off",
+  Monday ,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
 
 
-const isWeekend = (day: DayOfWeek) => {
-    console.log(day);
+const isWeekend = (day: DayOfWeek):boolean => {
+  if (day === DayOfWeek.Saturday || day === DayOfWeek.Sunday) {
+    return true;
+  }
+  return false
  };
