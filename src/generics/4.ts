@@ -5,8 +5,10 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: User) {
-  // Оновлення користувача
+function createOrUpdateUser(initialValues: Partial<User>): Partial<User> {
+    return initialValues;
+    
+
 }
 
 createOrUpdateUser({ 
